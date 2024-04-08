@@ -1,0 +1,59 @@
+<style>
+    .navbar{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .navbar-nav {
+        font-size: 15px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    .navbar-nav a {
+        text-decoration: none;
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    .navbar-nav .nav-link {
+        color: #6c757d;
+        transition: all .3s ease-in-out;
+    }
+    .navbar-nav .nav-link:hover {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+        transition: all .3s ease-in-out;
+    }
+    .navbar-nav .nav-link.active {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        {% for logo in logo|slice:":1" %}
+        <a href="/" class="navbar-brand">
+            <img src="{{logo.image.url}}" alt="{{logo.alt_text}}" width="150px" class="desol-logo">
+        </a>
+        {% endfor %}
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto gap-5 d-flex align-items-center">
+            {% url 'homepage' as url %}
+            <a class="nav-link {% if request.path == url %}active{% endif %}" aria-current="page" href="{{url}}">Home</a>
+            {% url 'about_us' as url %}
+            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">About Us</a>
+            {% url 'career_destination' as url %}
+            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">Career Destination</a>
+            {% url 'packages' as url %}
+            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">Packages</a>
+            {% url 'news' as url %}
+            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">News</a>
+            {% url 'contact_us' as url %}
+            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>

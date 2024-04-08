@@ -1,0 +1,42 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<section class="desol-breadcrumb-section" style="background-image: url(/media/home/images/extras/blogs.jpg);background-position: center center;">
+    <div class="desol-breadcrumb-overlay" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+    <div class="container">
+        <h1 style="color:#fff;">News Section</h1>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb text-center">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">News</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="desol-section">
+    <div class="container">
+        <div class="row">
+            {% for blog in blogs %}
+            <div class="col-md-4">
+                <div class="desol-blog-section">
+                    <div class="desol-blog-inner">
+                        <div class="desol-blog-image-container">
+                            <img src="{{blog.blog_image.url}}" alt="desol_blog_{{blog.title}}" class="w-100">
+                            <div class="desol-blog-image-overlay-text">
+                                <div>Desol Global</div>
+                                <div>{{blog.created_at|date:"F d, Y"}}</div>
+                            </div>
+                        </div>
+                        <div class="desol-blog-content-container">
+                            <h2>{{blog.title}}</h2>
+                            <a href="{% url 'blog_details' blog.slug %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

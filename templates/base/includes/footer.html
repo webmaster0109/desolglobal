@@ -1,0 +1,58 @@
+<!-- footer -->
+<section class="desol-dark-bg">
+    <div class="container">
+        <div class="row gap-5">
+            <div class="col-md-3">
+                <div class="mb-3">
+                    {% for logo in logo|slice:":1" %}
+                    <a href="/">
+                        <img src="{{logo.image.url}}" alt="{{logo.alt_text}}" width="180px">
+                    </a>
+                    {% endfor %}
+                </div>
+                <div class="mb-5">
+                    {% for desc in desc|slice:":1" %}
+                    <p style="color: #fff; font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 300; letter-spacing: 0.5px;">
+                        {{desc.description|slice:"350"}}...
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-warning mb-3" style="font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: 0.5px;">Quick Links</h5>
+                <ul class="text-white desol-footer-links">
+                    <li><a href="{% url 'career_destination' %}" rel="noopener noreferrer">Career Destination</a></li>
+                    <li><a href="{% url 'news' %}" rel="noopener noreferrer">News</a></li>
+                    <li><a href="{% url 'about_us' %}" rel="noopener noreferrer">About Us</a></li>
+                    <li><a href="{% url 'contact_us' %}" rel="noopener noreferrer">Contact Us</a></li>
+                    <li><a href="#" rel="noopener noreferrer">Terms & Conditions</a></li>
+                    <li><a href="#" rel="noopener noreferrer">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7296663.812946248!2d60.92286858184622!3d26.749987897933885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f696bd7e14769%3A0xbcc8aa7c0d69a6d1!2sLuxury%20777%20Car%20Rental!5e0!3m2!1sen!2sin!4v1711537405665!5m2!1sen!2sin" width="600" height="350" style="border:0; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div style="border-top: 1px solid #3E3468; margin-top: 35px; padding-top: 25px;">
+        <div class="container">
+            <div class="desol-footer-section">
+                <div class="me-3">
+                    <h5 style="color: #fff; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 500; letter-spacing: 0.5px;">Follow us:</h5>
+                </div>
+                <div class="desol-footer-socials">
+                {% for social in socials %}
+                {% if not social.link is None %}
+                    <a href="">
+                        <img src="{{social.image.url}}" alt="" width="30px" srcset="">
+                    </a>
+                {% endif %}
+                {% endfor %}
+                </div>
+                <div class="desol-footer-copyrights ms-auto" style="color: #fff; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.5px;">
+                    Copyrights &copy;2024 Desol Global, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

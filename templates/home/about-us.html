@@ -1,0 +1,126 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<section class="desol-breadcrumb-section" style="background-image: url(/media/home/images/extras/world-map.jpg);">
+    <div class="desol-breadcrumb-overlay" style="background-color: rgba(255, 255, 255, 0.3);"></div>
+    <div class="container">
+        <h1>About Desol</h1>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb text-center">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About us</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="desol-section">
+    <div class="container">
+        <div class="desol-about-us-section">
+            <div class="desol-about-us-creative">
+                <div class="desol-creative-image">
+                    <img src="/media/home/images/extras/about_img3.jpg" width="100%" alt="">
+                    <div class="desol-creative-container">
+                        <h2>Desol Global</h2>
+                        <p>
+                            <b>Do you want to work in Europe?</b> Many countries require a visa or work permit, however, there’s a risk of applying for the wrong type of visa when doing it yourself and making mistakes. Our team of experienced immigration specialists will guide you through the process of obtaining the right visa/work permit - ensuring that all necessary documents are submitted correctly and in time. We understand the importance of compliance and will make sure that your work in Europe is legal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="desol-services-bg">
+        <div class="container">
+            <div class="row desol-about-us-row">
+                <div class="col-md-6 col-12">
+                    <h3>DESOL GLOBAL’S REACH:</h3>
+                    <h4>Desol Global operates from key locations including Dubai, Vilnius, Riga, Tallinn, and Warsaw, ensuring convenient access for our clients.</h4>
+                    <p>With offices strategically placed across these cities, we bring our expertise and support closer to you. Whether you're in bustling Dubai or the cultural centers of Eastern Europe, our team is here to assist you every step of the way. Our local presence allows us to provide personalized assistance tailored to your needs, ensuring a smooth and hassle-free experience as you pursue your European dreams with Desol Global.</p>
+                </div>
+                <div class="col-md-5 col-12 ms-auto">
+                    <div class="desol-about-image-container">
+                        <img src="/media/home/images/extras/global-office-two.jpg" class="img-fluid w-100" alt="desol-global-office">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="desol-section">
+    <div class="container">
+        <div class="desol-about-us-section">
+            <h3>OUR MISSION:</h3>
+            <p>
+                At Desol Global, our mission is clear: to be your reliable partner in realizing your European dreams. With our European-based team, we offer affordable solutions, ensuring a smooth and hassle-free process. Our commitment to transparency means you can trust us every step of the way. Let Desol Global be your guide as you embark on your journey to Europe, making your dreams a reality with ease and affordability.
+            </p>
+        </div>
+    </div>
+</section>
+<section style="margin-bottom: 50px;">
+        <div class="container desol-about-container">
+            <div class="row gap-5">
+                <div class="col-md-5 col-lg-5 col-12 desol-why-choose-us">
+                    <div class="desol-about-image-container">
+                        <img src="/media/home/images/extras/our-values.jpg" class="w-100 img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5 col-12 desol-why-choose-us">
+                    <div class="desol-why-choose-us-title">
+                        <h4>OUR VALUES</h4>
+                        <div class="row">
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/32pixels/legal.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>LEGAL JOB OPPORTUNITIES</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/32pixels/paid-on-time.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>GET PAID ON TIME</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/32pixels/passport.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>Keep your passport – you're in control!</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/32pixels/flexible-hours.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>FLEXIBLE WORKING HOURS</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/32pixels/perks.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>Offering free housing, transportation support, health insurance, and nutritious meals</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section>
+    <div class="desol-services-bg desol-contact-us-form-section">
+        <div class="container">
+            {% include 'home/customer_form.html' %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

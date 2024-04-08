@@ -1,0 +1,1012 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<section>
+    <div class="background-div">
+        <div class="desol-hero-big-section">
+            <header class="desol-navbar-header">
+                <style>
+                    .desol-navbar-header {
+                        padding-top: 3rem !important;
+                        padding-bottom: 3rem !important;
+                    }
+                    @media (max-width:660px) {
+                        .desol-navbar-header {
+                            padding-top: 1rem !important;
+                            padding-bottom: 1rem !important;
+                        }
+                    }                  
+                    .navbar-toggler {
+                        background-color: #fff;
+                    }
+                    .navbar{
+                        background-color: transparent;
+                    }
+                    .navbar-nav {
+                        font-size: 17px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        letter-spacing: 0.7px;
+                    }
+                    .navbar-nav a {
+                        text-decoration: none;
+                        /* font-family: 'Poppins', sans-serif; */
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                    }
+                    .navbar-nav .nav-link {
+                        color: #fff;
+                        transition: all .3s ease-in-out;
+                    }
+                    .navbar-nav .nav-link:hover {
+                        color: transparent;
+                        background-clip: text;
+                        background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+                        transition: all .3s ease-in-out;
+                    }
+                    .navbar-nav .nav-link.active {
+                        color: transparent;
+                        background-clip: text;
+                        background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+                    }
+                </style>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        {% for logo in logo|slice:":1" %}
+                        <a href="/" class="navbar-brand">
+                            <img src="{{logo.image.url}}" alt="{{logo.alt_text}}" width="150px" class="desol-logo">
+                        </a>
+                        {% endfor %}
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto gap-5 d-flex align-items-center">
+                            {% url 'homepage' as url %}
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" aria-current="page" href="{{url}}">Home</a>
+                            {% url 'about_us' as url %}
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">About Us</a>
+                            {% url 'career_destination' as url %}
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">Career Destination</a>
+                            {% url 'packages' as url %}
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">Packages</a>
+                            {% url 'news' as url %}
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">News</a>
+                            {% url 'contact_us' as url %}
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+    
+            <div class="container hero-setion">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 desol-hero-section">
+                        <h1 class="desol-hero-heading-one">
+                            Study Work <br>Live <br><b style="color: #9FCFBB;">In Europe</b>
+                        </h1>
+                        <h2>Ready to Study, Work, and Live Your European Dream? Desol Global Empowers Your Journey Every Step of the Way. Start Your Journey Today!</h2>
+                            <a href="#" class="desol-hero-btn">
+                                <span class="desol-hero-btn-text">apply now</span>
+                                <span class="material-symbols-outlined">expand_circle_right</span>
+                            </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="card-wrapper container-sm d-flex justify-content-around">
+                                        <div class="card">
+                                            <img src="/media/home/images/country/Lithuania-city.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h3 class="card-title">Live in Lithuania</h3>
+                                            <p>Live, Learn, Thrive Affordably in Lithuania! <b>Easy process</b>, bright future awaits – achieve your academic or career goals in a vibrant European nation.</p>
+                                            <a href="#" class="card-button">
+                                                <span class="card-button-text">Read more</span>
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward_ios
+                                                </span>
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                                        <div class="card">
+                                            <img src="/media/home/images/country/poland-city.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h3 class="card-title">Live in Poland</h3>
+                                            <p>Live, Learn, Thrive Affordably in Poland! <b>Easy process</b>, bright future awaits – achieve your academic or career goals in a vibrant European nation</p>
+                                            <a href="#" class="card-button">
+                                                <span class="card-button-text">Read more</span>
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward_ios
+                                                </span>
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                                        <div class="card">
+                                            <img src="/media/home/images/country/Latvia-city.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h3 class="card-title">Live in Latvia</h3>
+                                            <p>Live, Learn, Thrive Affordably in Latvia! <b>Easy process</b>, bright future awaits – achieve your academic or career goals in a vibrant European nation.</p>
+                                            <a href="#" class="card-button">
+                                                <span class="card-button-text">Read more</span>
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward_ios
+                                                </span>
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="material-symbols-outlined carousel-control-icon" aria-hidden="true">
+                                            keyboard_double_arrow_left
+                                        </span>
+                                        <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="material-symbols-outlined carousel-control-icon" aria-hidden="true">keyboard_double_arrow_right</span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="desol-section">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 mb-5">
+                    <h4 class="text-center desol-services">Our Services</h4>
+                </div>
+            </div>
+            <div class="row gap-3">
+                <div class="col-md-3 col-6 desol-services-card">
+                    <div class="desol-services-icon me-3">
+                        <img src="/media/home/images/illustrations/consultant.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        Free Consultancy
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 desol-services-card">
+                    <div class="desol-services-icon me-3">
+                        <img src="/media/home/images/illustrations/work-visa_.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        Work Permit Visa & Temporary Resident Permit Service Assistance
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 desol-services-card">
+                    <div class="desol-services-icon me-3">
+                        <img src="/media/home/images/illustrations/passport.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        Student Visa Service Assistance
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 desol-services-card">
+                    <div class="desol-services-icon me-3">
+                        <img src="/media/home/images/illustrations/travel.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        Business Visa Service Assistance
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="desol-services-bg">
+        <div class="container desol-services-second">
+            <h4 class="text-center desol-services">Your Pathway to Europe with Trust and Affordability!</h4>
+            <h5 class="text-center">Thanks to our European team, fair prices, and honest approach, we've achieved great results. We believe in clear prices and honest service, so you can trust us completely.</h5>
+            <div class="row gap-3">
+                <div class="col-md-2 col-6 desol-services-card-two">
+                    <div class="desol-services-icon">
+                        <img src="/media/home/images/illustrations/post.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        <span>5+</span><br>
+                        Years of Experience
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6 desol-services-card-two">
+                    <div class="desol-services-icon">
+                        <img src="/media/home/images/illustrations/customer-review.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        <span>1000+</span><br>
+                        Happy Clients
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6 desol-services-card-two">
+                    <div class="desol-services-icon">
+                        <img src="/media/home/images/illustrations/delivery.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        <span>6+</span><br>
+                        European Destinations
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6 desol-services-card-two">
+                    <div class="desol-services-icon">
+                        <img src="/media/home/images/illustrations/web-programming.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        <span>90+</span><br>
+                        Study programs
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6 desol-services-card-two">
+                    <div class="desol-services-icon">
+                        <img src="/media/home/images/illustrations/job-search.png" alt="">
+                    </div>
+                    <div class="desol-services-title">
+                        <span>120+</span><br>
+                        Job Positions
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="desol-section">
+    <div class="container">
+        <h4 class="text-center desol-services" style="margin-bottom: 50px;">Our Popular Destinations</h4>
+        <div class="row">
+            <div class="col-md-7 col-12">
+                <div class="desol-destination-map">
+                    <img src="/media/home/images/illustrations/map.png" alt="">
+                    <!-- <div class="desol-map-poland">
+                        <img src="/media/home/images/illustrations/google-maps.png" alt="">
+                    </div>
+                    <div class="desol-map-lithuania">
+                        <img src="/media/home/images/illustrations/google-maps.png" alt="">
+                    </div>
+                    <div class="desol-map-latvia">
+                        <img src="/media/home/images/illustrations/google-maps.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-12 desol-destination-description mb-3">
+                        <div class="desol-destination-icon me-3">
+                            <img src="/media/home/images/country/poland.webp" alt="" srcset="">
+                        </div>
+                        <div class="desol-destination-title me-3">
+                            Poland
+                        </div>
+                        <div class="desol-destination-subtitle">
+                            Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 6,129</b> <br>
+                            Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 8,599</b>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-12 desol-destination-description mb-3">
+                        <div class="desol-destination-icon me-3">
+                            <img src="/media/home/images/country/Lithuania.png" alt="" srcset="">
+                        </div>
+                        <div class="desol-destination-title me-2">
+                            Lithuania
+                        </div>
+                        <div class="desol-destination-subtitle">
+                            Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 7,239</b> <br>
+                            Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 9,889</b>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-12 desol-destination-description">
+                        <div class="desol-destination-icon me-3">
+                            <img src="/media/home/images/country/Latvia.jpg" alt="" srcset="">
+                        </div>
+                        <div class="desol-destination-title me-3">
+                            Latvia
+                        </div>
+                        <div class="desol-destination-subtitle">
+                            Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 6,790</b> <br>
+                            Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 8,399</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="desol-services-bg">
+        <div class="container desol-why-choose">
+            <div class="row gap-5">
+                <div class="col-md-5 col-lg-5 col-12 desol-why-choose-us">
+                    <div class="desol-why-choose-us-icon">
+                        <img src="/media/home/images/extras/Girl-and-world.jpg" alt="">
+                        <div class="desol-why-choose-us-button">
+                            <a href="#">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5 col-12 desol-why-choose-us">
+                    <div class="desol-why-choose-us-title">
+                        <h4>Why Choose Us?</h4>
+                        <p>Our regular customers trust us because we always recommend the most optimal solution to their immigration problems, and we also always deliver our work on time due to our ability to cut through complexity and minimize risks.</p>
+                        <div class="row">
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/Competitive-Pricing.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>Competitive Pricing:</h5>
+                                    <h6>Cost-effective solutions without compromising on quality, making European dreams accessible to all.</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/leader.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>Expert European Team:</h5>
+                                    <h6>Expertise and local insight to navigate the complexities of migration seamlessly.</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/communication.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>Transparent Communication:</h5>
+                                    <h6>Clear and open communication ensures that you're informed and involved every step of the way.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="desol-section">
+    <div class="container">
+        <div class="desol-packages-section">
+            <div class="desol-packages-title">
+                <h4 class="text-center desol-services">CHOOSE YOUR PACKAGE</h4>
+                <p class="text-center">To begin your journey, please pick the package that fits you best.</p>
+            </div>
+            <div class="desol-package-cards mt-5">
+                <div class="row">
+                    <div class="desol-package-card col-md-4 col-12 mb-3">
+                        <div class="desol-card-image">
+                            <img src="/media/home/images/country/poland.webp" width="100%" alt="">
+                            <!-- <div class="desol-card-image-offer">
+                                <img src="/media/home/images/illustrations/special-tag.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="desol-card-header">
+                                <div class="me-auto desol-card-title">
+                                    Special Value Price <br>
+                                    <span class="desol-special-offer">AED <span class="desol-special-offer" style="font-size: 30px;">6,129</span></span>
+                                </div>
+                                <div class="ms-auto desol-card-subtitle">
+                                    Regular Price <br>
+                                    <span class="text-decoration-line-through text-muted">AED 8,599</span>
+                                </div>
+                        </div>
+                        <div class="desol-card-subheader">
+                            <h5>Poland Package</h5>
+                        </div>
+                        <div class="desol-card-footer">
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Visa processing time up to 3 months
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Excellent visa ratio
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Permanent residency
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Passport after 5 years
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Free accommodation & transportation & regeneration meal
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Free health insurance
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Flexible working hours
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Attractive salary on time
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Low cost of living
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Legal employment
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    No company ban
+                                </div>
+                            </div>
+                            <div class="desol-card-button">
+                                <a href="{% url 'contact_us' %}" class="text-center btn btn-danger col-12">APPLY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mb-3">
+                        <div class="desol-card-image">
+                            <img src="/media/home/images/country/Lithuania-city-poster.jfif" width="100%" alt="">
+                        </div>
+                        <div class="desol-card-header">
+                            <div class="me-auto desol-card-title">
+                                Special Value Price <br>
+                                <span class="desol-special-offer">AED <span class="desol-special-offer" style="font-size: 30px;">7,239</span></span>
+                            </div>
+                            <div class="ms-auto desol-card-subtitle">
+                                Regular Price <br>
+                                <span class="text-decoration-line-through text-muted">AED 9,889</span>
+                            </div>
+                        </div>
+                        <div class="desol-card-subheader">
+                            <h5>Lithuania Package</h5>
+                        </div>
+                        <div class="desol-card-footer">
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Visa processing time up to 3 months
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Excellent visa ratio
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Permanent residency
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Passport after 5 years
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Free accommodation & transportation & regeneration meal
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Free health insurance
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Flexible working hours
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Attractive salary on time
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Low cost of living
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Legal employment
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    No company ban
+                                </div>
+                            </div>
+
+                            <div class="desol-card-button">
+                                <a href="{% url 'contact_us' %}" class="text-center btn btn-danger col-12">APPLY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mb-3">
+                        <div class="desol-card-image">
+                            <img src="/media/home/images/country/Latvia.jpg" width="100%" alt="">
+                        </div>
+                        <div class="desol-card-header">
+                            <div class="me-auto desol-card-title">
+                                Special Value Price <br>
+                                <span class="desol-special-offer">AED <span class="desol-special-offer" style="font-size: 30px;">6,790</span></span>
+                            </div>
+                            <div class="ms-auto desol-card-subtitle">
+                                Regular Price <br>
+                                <span class="text-decoration-line-through text-muted">AED 8,399</span>
+                            </div>
+                        </div>
+                        <div class="desol-card-subheader">
+                            <h5>Latvia Package</h5>
+                        </div>
+                        <div class="desol-card-footer">
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Visa processing time up to 3 months
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Excellent visa ratio
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Permanent residency
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Passport after 5 years
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Free accommodation & transportation & regeneration meal
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Free health insurance
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Flexible working hours
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Attractive salary on time
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Low cost of living
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    Legal employment
+                                </div>
+                            </div>
+                            <div class="d-flex desol-card-point">
+                                <div class="text-success me-3">
+                                    <span class="material-symbols-outlined">
+                                        priority
+                                    </span>
+                                </div>
+                                <div>
+                                    No company ban
+                                </div>
+                            </div>
+
+                            <div class="desol-card-button">
+                                <a href="{% url 'contact_us' %}" class="text-center btn btn-danger col-12">APPLY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="desol-services-bg">
+        <div class="container">
+            <div class="row gap-5">
+                <div class="col-md-5 col-lg-5 col-12">
+                    <div class="desol-start-new-section">
+                        <h4 class="desol-services mb-5">START YOUR NEW LIFE IN 3 EASY STEPS:</h4>
+                        <div class="row">
+                            <div class="col-md-12 d-flex align-items-center mb-3">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/add-location.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>CHOOSE DESTINATION</h5>
+                                    <h6>Explore exciting countries and find the perfect fit for your goals and lifestyle.</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-center mb-3">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/cost.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>MAKE PAYMENT</h5>
+                                    <h6>Make a secure and affordable payment to kick off your European adventure.</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="/media/home/images/illustrations/go-to-work.png" alt="">
+                                </div>
+                                <div>
+                                    <h5>GET READY TO GO</h5>
+                                    <h6>Pack your bags and say goodbye to the ordinary – your new life awaits!</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5 col-12 desol-why-choose-us">
+                    <div class="desol-why-choose-us-icon-second">
+                        <img src="/media/home/images/country/journey-2.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="desol-section">
+    <div class="container">
+        <div class="row desol-testimonials-section">
+            <div class="col-md-5">
+                <p><i class="bi bi-quote me-1"></i>Testimonial</p>
+                <h3>What People Say About Us.</h3>
+            </div>
+            <div class="col-md-6 ms-auto">
+                <div id="carouselExampleControlsOne" class="carousel slide" data-bs-ride="false" data-bs-interval="true">
+                        <div class="carousel-indicators">
+                            {% for testimonial in testimonials %}
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter0}}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{forloop.counter}}"></button>
+                            {% endfor %}
+                        </div>
+                        <div class="carousel-inner">
+                            {% for testimonial in testimonials %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <div class="card-wrapper container-sm">
+                                    <div class="card desol-testimonials-review">
+                                        <div class="card-body">
+                                        <p class="desol-testimonials-text">‟{{testimonial.reviews}}”</p>
+                                        <h4 class="card-title">{{testimonial.name}}</h4>
+                                        <h5>
+                                            <img src="{{testimonial.flag}}" width="30px" alt="">
+                                            {{testimonial.country}}
+                                        </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsOne" data-bs-slide="prev">
+                                    <span class="material-symbols-outlined carousel-control-icon" aria-hidden="true">
+                                        keyboard_arrow_up
+                                    </span>
+                                    <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselExampleControlsOne" data-bs-slide="next">
+                                <span class="material-symbols-outlined carousel-control-icon" aria-hidden="true">keyboard_arrow_down</span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="desol-services-bg">
+        <div class="container desol-accordion-faqs">
+            <h4 class="desol-services mb-5 text-center">FAQ's</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        {% for faq in faqs|slice:":5" %}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{faq.id}}" aria-expanded="false" aria-controls="flush-collapse{{faq.id}}">
+                            {{faq.question}}
+                            </button>
+                          </h2>
+                          <div id="flush-collapse{{faq.id}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">{{faq.answer}}</div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+                        {% for faq in faqs|slice:"5:" %}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{faq.id}}" aria-expanded="false" aria-controls="flush-collapse{{faq.id}}">
+                            {{faq.question}}
+                            </button>
+                          </h2>
+                          <div id="flush-collapse{{faq.id}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleTwo">
+                            <div class="accordion-body">{{faq.answer}}</div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="desol-section desol-work-study-section">
+    <div class="desol-work-study-section">
+        <div class="container desol-work-study">
+            <h4 class="text-center">I WANT TO  WORK & STUDY IN</h4>
+        </div>
+        <div class="desol-work-study-image">
+            <!-- first -->
+            <div class="desol-work-image-container">
+                <img src="/media/home/images/country/extra/poland.jpg" class="d-block w-100" alt="">
+                <div class="desol-work-image-caption">
+                    <a href="{% url 'about_poland' %}">POLAND</a>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="desol-work-image-container">
+                <img src="/media/home/images/country/extra/LITHUANIA.jpg" class="d-block w-100" alt="">
+                <div class="desol-work-image-caption">
+                    <a href="{% url 'about_lithuania' %}">LITHUANIA</a>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="desol-work-image-container">
+                <img src="/media/home/images/country/extra/LATVIA.jpg" class="d-block w-100" alt="">
+                <div class="desol-work-image-caption">
+                    <a href="{% url 'about_latvia' %}">LATVIA</a>
+                </div>
+            </div>
+            <!-- fourth -->
+            <div class="desol-work-image-container">
+                <img src="/media/home/images/country/extra/ESTONIA.jpg" class="d-block w-100" alt="">
+                <div class="desol-work-image-caption">
+                    <a href="#">ESTONIA</a>
+                </div>
+            </div>
+            <!-- fifth -->
+            <div class="desol-work-image-container">
+                <img src="/media/home/images/country/extra/SERBIA.jpg" class="d-block w-100" alt="">
+                <div class="desol-work-image-caption">
+                    <a href="#">SERBIA</a>
+                </div>
+            </div>
+            <!-- sixth -->
+            <div class="desol-work-image-container">
+                <img src="/media/home/images/country/extra/CZECH.jpg" class="d-block w-100" alt="">
+                <div class="desol-work-image-caption">
+                    <a href="#">CZECH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- book consultation -->
+<section class="desol-section">
+    <div class="container">
+        <div class="desol-call-to-action text-center">
+            <h4 class="mb-5">Unlock Your Future in Europe: Study and Work Opportunities Await! Book Your Free Consultation Now</h4>
+            <a href="">Book Free Consultation</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="desol-services-bg desol-contact-us-form-section">
+        <div class="container">
+            {% include 'home/customer_form.html' %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

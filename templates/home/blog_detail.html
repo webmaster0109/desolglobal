@@ -1,0 +1,25 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<section class="desol-breadcrumb-section" style="background-image: url({{blog.blog_image.url}});background-position: center center;">
+    <div class="desol-breadcrumb-overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+    <div class="container">
+        <h1 style="color:#fff;">{{blog.title}}</h1>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb text-center">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'news' %}">News</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{blog.title}}</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="desol-section desol-blog-detail-section">
+    <div class="container">
+        <div class="desol-blog-content-section">
+            <h2>{{blog.title}}</h2>
+            <p>{{blog.body|safe}}</p>
+        </div>
+    </div>
+</section>
+{% endblock content %}

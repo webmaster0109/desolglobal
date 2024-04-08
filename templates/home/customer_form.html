@@ -1,0 +1,45 @@
+<div>
+    <div class="desol-contact-us">
+        <h4 class="desol-contact-us-heading text-center">
+            Contact Us
+        </h4>
+        <p class="desol-contact-us-text">Ready to embark on your journey to Europe? Please take a moment to fill out our contact form below. Our dedicated consultant will reach out to you promptly, providing all the essential information needed for your travel plans.</p>
+    </div>
+    <div class="desol-contact-us-form">
+        <div class="desol-contact-us-lists">
+            <ul class="desol-contact-us-list-display">
+                <li>Free Consultation</li>
+                <li>Effortless Document Submission</li>
+                <li>Secure Payment Options</li>
+                <li>Personalized Guidance</li>
+                <li>Timely Updates</li>
+                <li>Dedicated Support</li>
+            </ul>
+        </div>
+        <div class="">
+            <form method="post" autocomplete="off" action="{% url 'customer_details_submission' %}">
+                {% csrf_token %}
+                <input type="text" name="first_name" class="desol-contact-form-control" placeholder="First Name*" required>
+                <input type="text" name="last_name" class="desol-contact-form-control" placeholder="Last Name*" required>  
+                <input type="text" name="email" class="desol-contact-form-control" placeholder="Email*" required>  
+                <input type="text" name="phone" class="desol-contact-form-control" placeholder="Phone*" required>  
+                <input type="text" name="country" class="desol-contact-form-control" placeholder="Country of Residency*" required>  
+                {% comment %} <input type="text" name="position" class="desol-contact-form-control" placeholder="Position*" required> {% endcomment %}
+                <select name="position" class="desol-contact-form-control" id="">
+                    <option value="Work">Work</option>
+                    <option value="Study">Study</option>
+                </select>
+                <!-- <input type="text" name="destination" class="desol-contact-form-control" placeholder="Destination*" required> -->
+                <select name="destination" class="desol-contact-form-control" id="">
+                    <option value="Poland">Poland</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Czech">Czech</option>
+                </select>                     
+                <button type="submit" class="desol-contact-form-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

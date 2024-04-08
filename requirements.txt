@@ -1,0 +1,5 @@
+django
+requests
+django-ckeditor-5
+django-hitcount
+django-import-export

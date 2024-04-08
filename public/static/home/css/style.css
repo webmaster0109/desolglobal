@@ -1,0 +1,1772 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Serif+Text&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f3ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    border-radius: 5px;
+}
+
+
+.background-div {
+    width: 100%;
+    height: 100%;
+    background-image: url('/media/home/images/bg/1.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-position: 50% 50%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    backface-visibility: hidden;
+}
+.desol-header {
+    padding: 10px;
+}
+.desol-header .desol-logo {
+    width: 150px;
+}
+
+.desol-hero-big-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.desol-header .desol-header-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+.hero-setion {
+    padding: 100px 0;
+}
+
+h1.desol-hero-heading-one {
+    position: relative;
+}
+
+h1.desol-hero-heading-one::before {
+    position: absolute;
+    content: '';
+    border-left: 15px solid #fff;
+    top: 0;
+    left: 0;
+    bottom: 20px;
+    height: 100%;
+}
+
+.desol-hero-section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 90px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 25px;
+    line-height: 100px;
+}
+
+.desol-hero-section h2 {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 25px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.7px;
+    text-shadow: #000;
+    margin-top: 25px;
+}
+
+.desol-hero-section .desol-hero-btn {
+    background-color: #FF5757;
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 230px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.desol-hero-btn .desol-hero-btn-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+
+.desol-hero-btn span.material-symbols-outlined {
+    font-size: 45px;
+}
+
+.desol-hero-big-section .carousel-item .card {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 25px;
+    width: 350px;
+    height: 580px;
+}
+
+.desol-hero-big-section .carousel-item .card img {
+    border-radius: 30px;
+}
+
+.desol-hero-big-section .carousel-item .card h3 {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.desol-hero-big-section .carousel-item .card p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.desol-hero-big-section .carousel-item {
+    position: relative;
+}
+
+.desol-hero-big-section .card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #000;
+    padding: 10px 15px;
+    width: 150px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.desol-hero-big-section .card-button .card-button-text {
+    font-family: "Poppins", sans-serif;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.desol-hero-big-section .material-symbols-outlined {
+    font-size: 25px;
+}
+
+.desol-hero-big-section .carousel-control-prev {
+    position: absolute;
+    top: 48%;
+    left: 20%;
+}
+
+.desol-hero-big-section .carousel-control-next {
+    position: absolute;
+    top: 48%;
+    right: 20%;
+}
+
+.desol-hero-big-section .carousel-control {
+    width: 50px;
+    height: 50px;
+    background-color: #FF5757;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 1;
+}
+
+.desol-hero-big-section .carousel-control .carousel-control-icon {
+    font-size: 45px;
+}
+
+.desol-hero-big-section .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    opacity: 1;
+}
+
+h4.desol-services {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.desol-services-card {
+    display: flex;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.desol-services-card .desol-services-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.desol-section {
+    padding: 80px 0;
+}
+
+.desol-services-bg {
+    /* background: linear-gradient(180deg, #FFD2E0 0%, #FFF1F6 100%); */
+    background-color: #f7f3ff;
+    padding: 40px 0;
+}
+.desol-services-second h4 {
+    padding: 0 300px;
+    padding-bottom: 20px;
+}
+
+.desol-services-second h5 {
+    padding: 0 250px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.desol-services-card-two {
+    display: flex;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    flex: auto;
+    flex-wrap: nowrap;
+}
+
+.desol-services-card-two .desol-services-title {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center !important;
+}
+
+.desol-services-card-two .desol-services-title span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px; 
+    font-weight: 700;
+}
+
+.desol-destination-map {
+    position: relative;
+}
+
+.desol-destination-map img {
+    width: 100%;
+}
+
+.desol-destination-map .desol-map-poland {
+    position: absolute;
+    top: 170px;
+    width: 25px;
+    right: 406px;
+}
+
+.desol-destination-map .desol-map-lithuania {
+    position: absolute;
+    top: 160px;
+    width: 25px;
+    /* background: linear-gradient(134deg, #F991B3 0%, #FF568E 100%); */
+    right: 385px;
+}
+
+.desol-destination-map .desol-map-latvia {
+    position: absolute;
+    top: 145px;
+    width: 25px;
+    right: 375px;
+}
+
+.desol-destination-description {
+    display: flex;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+.desol-destination-description .desol-destination-icon img {
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.desol-destination-description .desol-destination-title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desol-destination-description .desol-destination-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-align: end;
+}
+
+.desol-why-choose .desol-why-choose-us {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+.desol-why-choose-us-icon img {
+    width: 100%;
+    border-radius: 35px;
+    background: linear-gradient(135deg, #FF0769 0%, rgba(136, 93, 241, 0.56) 47.92%, #FFB14D 70.06%, #FCD04E 100%);
+    padding: 5px;
+}
+
+.desol-why-choose-us-icon {
+    position: relative;
+}
+
+.desol-why-choose-us-icon-second img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.desol-why-choose-us-icon .desol-why-choose-us-button {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    /* #FF5F6D → #FFC371 */
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.desol-why-choose-us-icon .desol-why-choose-us-button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.desol-why-choose-us-title h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.desol-why-choose-us-title p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.desol-why-choose .desol-why-choose-us-title .col-md-12 {
+    padding: 25px 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+.desol-why-choose-us-title h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desol-about-container .desol-why-choose-us-title h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.desol-about-container .desol-why-choose-us-title .col-md-6, .desol-about-container .desol-why-choose-us-title .col-md-12 {
+    padding: 20px 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+    border-radius: 10px;
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+.desol-about-container .desol-why-choose-us {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.desol-why-choose-us-title h6 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.desol-packages-title p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.desol-package-cards .desol-card-image img {
+    border-radius: 15px 15px 0 0;
+}
+
+/* .desol-package-cards .desol-card-image {
+    position: relative;
+} */
+/* 
+.desol-package-cards .desol-card-image .desol-card-image-offer {
+    position: absolute;
+    bottom: -20px;
+    right: -280px;
+    width: 100%;
+} */
+
+.desol-package-cards .desol-card-header {
+    padding: 25px;
+    background-color: #f7f3ff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.desol-card-header .desol-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 7px; 
+    background-color: #fff; 
+    border: 1px dashed #000; 
+    border-radius: 20px;
+}
+
+.desol-card-header .desol-card-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.desol-card-header .desol-card-title span, .desol-card-subtitle span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desol-card-header span.desol-special-offer {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+}
+
+.desol-package-cards .desol-card-subheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    /* border-top: 2px solid #FF568E;
+    border-bottom: 2px solid #F991B3; */
+    border-top: 2px solid #FF5F6D;
+    border-bottom: 2px solid #FFC371;
+    /* background-color: #FFEDF2; */
+    /* background: linear-gradient(134deg, #FF5F6D, #FFC371); */
+    color: #fff;
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    /* background: linear-gradient(310deg, #B08FFF 0%, #6031D2 100%); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.desol-package-cards .desol-card-subheader h5 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.desol-package-cards .desol-card-footer {
+    padding: 25px;
+    background-color: #f7f3ff;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+}
+
+.desol-card-button a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #FF5F6D;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    border: 1px solid #FF5F6D;
+}
+
+.desol-card-button a:hover {
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    border: 1px solid #FF5F6D;
+}
+
+.desol-start-new-section h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.desol-start-new-section h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.desol-call-to-action {
+    /* background: linear-gradient(to right, #333399, #FF00CC); */
+    background: linear-gradient(74deg,#714DFF 0%,#9C83FF 23%,#E151FF 81%,#FFF759 100%) padding-box;
+    /* background: linear-gradient(310deg, #B08FFF 0%, #6031D2 100%); */
+    padding: 75px 180px;
+    border-radius: 25px;
+}
+
+.desol-call-to-action h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    /* background-clip: text;
+    background-image: linear-gradient(to right, rgb(255, 75, 75), 
+            rgb(255, 189, 69)); */
+}
+
+.desol-call-to-action a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 12px;
+    background-color: #FF5F6D;
+    border-radius: 35px;
+    border: 1px solid #FF5F6D;
+}
+
+.desol-call-to-action a:hover {
+    background: linear-gradient(to right, #F991B3, #FF5F6D);
+    border: 0;
+
+}
+
+.desol-dark-bg {
+    background: #272144 !important;
+    /* background: linear-gradient(310deg, #B08FFF 0%, #6031D2 100%); */
+    padding-top: 45px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.desol-testimonials-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+}
+
+.desol-testimonials-section p {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .7px;
+    color: rgba(33, 37, 41, 0.75);
+    text-transform: uppercase;
+}
+
+.desol-testimonials-section h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.desol-testimonials-section .carousel-item {
+    position: relative;
+}
+
+.desol-work-study-section .container {
+    margin-bottom: 30px;
+}
+
+.desol-work-study-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.desol-work-study-image .desol-work-image-container {
+    overflow: hidden;
+    height: 480px;
+    width: 100%;
+    position: relative;
+}
+
+.desol-work-image-container img {
+    object-fit: cover;
+}
+
+.desol-work-image-container .desol-work-image-caption {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desol-work-image-caption a {
+    padding: 10px;
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.desol-work-study {
+    padding: 0;
+}
+
+.desol-work-study h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #000;
+}
+
+.desol-testimonials-review {
+    background-image: url(/media/home/images/illustrations/quotes.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 95% 95%;
+    background-color: #f7f3ff;
+    padding: 30px;
+    border-top: 4px solid #6031D2;
+    border-bottom: 4px solid #B08FFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.desol-testimonials-review .desol-testimonials-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+}
+
+.desol-testimonials-review h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.desol-testimonials-review h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.desol-testimonials-section .carousel-indicators {
+    margin-left: 0;
+    margin-right: 10%;
+    margin-bottom: 1.2rem;
+}
+
+.desol-testimonials-section .carousel-indicators button {
+    /* background: linear-gradient(196deg, #333399, #FF00CC); */
+    background-color: #6031D2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.desol-testimonials-section .carousel-control-prev {
+    position: absolute;
+    top: 30%;
+    left: 90%;
+}
+
+.desol-testimonials-section .material-symbols-outlined {
+    font-size: 25px;
+}
+
+
+.desol-testimonials-section .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+
+.desol-testimonials-section .carousel-control {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    border-radius: 5px;
+    color: #fff;
+    opacity: 1;
+}
+
+.desol-testimonials-section .carousel-control .carousel-control-icon {
+    font-size: 45px;
+}
+
+.desol-testimonials-section .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    opacity: 1;
+}
+
+.desol-accordion-faqs .accordion-item {
+    background-color: transparent;
+}
+
+.desol-accordion-faqs .accordion-button {
+    background-color: transparent;
+    border-top: 2px solid #FF568E;
+    border-right: 2px solid #FF568E;
+    border-left: 2px solid #F991B3;
+    border-bottom: 2px solid #F991B3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #333399, #FF00CC);
+}
+
+.desol-accordion-faqs .accordion-button::after {
+    display: none;
+}
+
+.desol-accordion-faqs .accordion-button::before{
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 10px;
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+}
+
+.desol-accordion-faqs .accordion {
+    -bs-accordion-btn-focus-box-shadow: 0;
+}
+
+.desol-accordion-faqs .accordion-button:not(.collapsed)::before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+}
+
+.desol-accordion-faqs .accordion-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.desol-contact-us-form-section {
+    background-image: url(/media/home/images/extras/customers.png);
+    background-repeat: no-repeat;
+    background-position: 30% 101%;
+    background-size: 380px;
+    margin: 0;
+}
+
+.desol-contact-us {
+    margin-bottom: 40px;
+}
+
+.desol-contact-us .desol-contact-us-heading {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.desol-contact-us-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.desol-contact-us-form {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.desol-contact-us-lists {
+    margin-right: 80px;
+}
+
+.desol-contact-us-lists .desol-contact-us-list-display {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desol-contact-us-list-display li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #333399, #FF5F6D);
+    /* background-image: linear-gradient(134deg,#714DFF 0%,#9C83FF 23%,#E151FF 81%,#FFF759 100%); */
+}
+
+.desol-contact-us-list-display li::before {
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 8px;
+    /* color: #FF568E; */
+}
+
+.desol-contact-us-form form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.desol-contact-us-form .desol-contact-form-control {
+    display: block;
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid #FF5F6D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .6px;
+    background-color: transparent;
+    appearance: none;
+    color: #333399;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* .desol-contact-us-form .desol-contact-form-control option {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .6px;
+    background-color: transparent;
+    color: #333399;
+} */
+
+.desol-contact-us-form .desol-contact-form-control::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .6px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #333399, #FF00CC);
+}
+
+.desol-contact-us-form .desol-contact-form-control:focus {
+    outline: none;
+    border-color: 0;
+    box-shadow: inset 0 1px 4px #fff, 0 0 10px 2px #FF5F6D;
+}
+
+.desol-contact-us-form .desol-contact-form-button {
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.desol-breadcrumb-section {
+    margin: 0;
+    padding: 0;
+    background-blend-mode: multiply;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* .desol-breadcrumb-section::after {
+    position: absolute;
+    content: '';
+    background-image: url(/media/home/images/extras/travel-tour.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 550px;
+    height: 100%;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+} */
+
+.desol-breadcrumb-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.desol-breadcrumb-section h1 {
+    font-size: 55px;
+    font-weight: 800;
+    z-index: 1;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.breadcrumb {
+    padding: 7px 10px;
+    background-color: #f7f3ff;
+    margin: 0;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+}
+
+.breadcrumb .breadcrumb-item {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #333399, #FF5F6D);
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center;
+    display: inline-block;
+}
+.breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.desol-about-us-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.desol-about-us-section h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.desol-about-us-section h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desol-about-us-section p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    text-align: justify;
+    color: #787B84;
+}
+
+.desol-about-us-section .desol-creative-image {
+    border: 2px solid #F3F3F3;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+}
+
+.desol-about-us-section .desol-creative-image:hover::after {
+    width: 100%;
+    left: 0;
+}
+.desol-about-us-section .desol-creative-image:hover {
+    cursor: pointer;
+}
+.desol-about-us-section .desol-creative-image::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    content: '';
+    background: linear-gradient(135deg, #FF0769 0%, rgba(136, 93, 241, 0.56) 47.92%, #FFB14D 70.06%, #FCD04E 100%);
+    -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+.desol-about-us-section .desol-creative-image .desol-creative-container {
+    padding: 50px 50px;
+}
+
+.desol-about-us-section ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.desol-about-us-section ol li {
+    font-family: 'Poppins', sans-serif;
+    color: #787B84;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+}
+
+.desol-about-us-section ol li::before {
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 8px;
+}
+
+.desol-about-us-row h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.desol-about-us-row h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #787B84;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.desol-about-us-row p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    text-align: justify;
+    color: #787B84;
+}
+
+.desol-about-image-container img {
+    padding: 2px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #FF0769 0%, rgba(136, 93, 241, 0.56) 47.92%, #FFB14D 70.06%, #FCD04E 100%);
+}
+
+.desol-career-destination-country h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.desol-career-destination-country p {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: #787B84;
+    line-height: 30px;
+}
+
+.desol-career-destination-country .desol-country-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #EDF3F5;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .5s linear;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.desol-career-destination-country .desol-country-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
+.desol-career-destination-country .desol-country-card .desol-country-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.6px;
+}
+
+.desol-career-destination-country .desol-country-card .desol-country-image {
+    margin-right: 18px;
+}
+
+.desol-career-destination-country .desol-country-card .desol-country-image img {
+    width: 100px;
+    border-radius: 12px;
+    padding: 1px;
+    height: 63px;
+    background: linear-gradient(135deg, #FF0769 0%, rgba(136, 93, 241, 0.56) 47.92%, #FFB14D 70.06%, #FCD04E 100%);
+}
+
+.desol-career-destination-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+.desol-career-destination-container .desol-career-destination-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+}
+
+.desol-career-destination-container .desol-career-destination-content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.desol-career-destination-container .desol-career-destination-content .desol-career-destination-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #FF5F6D;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 25px;
+    letter-spacing: .7px;
+}
+
+.desol-career-destination-container .desol-career-destination-image img {
+    width: 600px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+.desol-country-short-background {
+    background: linear-gradient(144deg, #FF5F6D, #FFC371);
+    padding: 40px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.desol-about-country .desol-about-country-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.desol-about-country .desol-about-country-content p {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.6px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.desol-about-country .desol-about-country-image img {
+    width: 500px;
+    height: 855px;
+    border-radius: 15px;
+}
+
+.desol-country-cards .desol-card-items-inner {
+    padding: 25px;
+    border: 1px solid #f7f3ff;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.desol-country-cards .desol-card-items-inner:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
+
+.desol-country-cards .desol-card-items-inner:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.desol-country-cards .desol-card-items-inner::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 6px;
+    content: '';
+    background: linear-gradient(135deg, #FF0769 0%, rgba(136, 93, 241, 0.56) 47.92%, #FFB14D 70.06%, #FCD04E 100%);
+    -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+/* .desol-country-cards .desol-card-items-inner::before {
+    position: absolute;
+    width: 70px;
+    height: 160px;
+    border-radius: 35px;
+    background-color: #f7f3ff;
+    content: "";
+    top: -39px;
+    left: 5px;
+    transform: rotate(-45deg);
+} */
+
+.desol-country-cards .desol-card-items-icon {
+    margin-bottom: 15px;
+}
+
+.desol-country-cards .desol-card-items-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.desol-country-cards .desol-card-items-content h4 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    margin-bottom: 10px;
+}
+
+.desol-country-cards .desol-card-items-content p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .7px;
+    text-align: start;
+    color: #787B84;
+    line-height: 25px;
+}
+
+.desol-about-country-section {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: bottom right;
+}
+
+.desol-about-country-content-two {
+    margin-bottom: 30px;
+}
+
+.desol-about-country-content-two h3 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.desol-about-country-content-two h3 span {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+}
+
+.desol-country-card-numbers {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(247, 243, 255, 0.9);
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #f7f3ff;
+    margin-bottom: 18px;
+}
+
+.desol-country-card-numbers .desol-card-numbers-icon {
+    padding: 25px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.desol-country-card-numbers .desol-card-numbers-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.desol-country-card-numbers .desol-card-numbers-content p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 25px;
+    color: #787B84;
+}
+
+.desol-country-job-specification {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.desol-country-job-specification .desol-job-content {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #EDF3F5;
+    width: 100%;
+    height: 170px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.desol-country-job-specification .desol-job-content h6 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.desol-country-job-specification .desol-job-content p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #787B84;
+}
+
+.desol-country-job-specification .desol-job-content:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    border: 0;
+}
+
+.desol-country-job-specification .desol-job-content::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 5px;
+    height: 50%;
+    background-color: #FF5757;
+}
+
+.desol-apply-now-button {
+    text-align: center !important;
+}
+
+.desol-apply-now-button .apply-now-button {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    width: 250px;
+    background: linear-gradient(144deg, #FF5F6D, #FFC371);
+    color: #fff;
+    display: inline-block;
+    border-radius: 25px;
+    letter-spacing: .7px;
+}
+
+.desol-apply-now-button .apply-now-button:hover {
+    border: 1px solid #FF5F6D;
+}
+
+.desol-apply-now-button p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    color: #787B84;
+    line-height: 25px;
+}
+
+.desol-blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desol-blog-inner {
+    display: inline-block;
+    background: rgba(247, 243, 255, 0.9);
+    border-radius: 15px;
+}
+
+.desol-blog-image-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.desol-blog-image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.desol-blog-image-container .desol-blog-image-overlay-text {
+    position: absolute;
+    background: linear-gradient(134deg, #FF5F6D, #FFC371);
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 100px 0 0 0;
+}
+
+.desol-blog-image-overlay-text div {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #EDF3F5;
+}
+
+.desol-blog-image-overlay-text div:nth-child(n):first-child::before {
+    content: "\f007";
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    margin-right: 5px;
+    left: 0;
+}
+
+.desol-blog-image-overlay-text div:nth-child(n):last-child::before {
+    content: "\f073";
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    margin-right: 5px;
+    left: 0;
+}
+
+.desol-blog-inner .desol-blog-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    gap: 18px;
+}
+
+.desol-blog-inner .desol-blog-content-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.desol-blog-inner .desol-blog-content-container a {
+    padding: 10px 12px;
+    background-color: #FF5757;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.desol-blog-detail-section h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+}
+
+.desol-blog-detail-section p {
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+.desol-blog-detail-section h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.desol-blog-detail-section a {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(134deg, #333399 75%, #FF00CC 100%);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.desol-footer-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desol-footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.desol-about-country-two .desol-country-flex-two-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+}
+
+.desol-country-flex-two-section .desol-country-flex-content .accordion {
+    width: 550px;
+}
+
+.desol-country-flex-two-section .desol-country-flex-content .accordion-body {
+    height: 250px;
+    overflow: auto;
+}
+
+.desol-about-country-two .desol-country-flex-image img {
+    border-radius: 25px;
+}
+
+.desol-country-imagine-section h3 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+}
+
+.desol-footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.desol-footer-links a:hover {
+    display: inline-block;
+    font-weight: 500;
+    color: transparent;
+    background-image: linear-gradient(134deg, #FF5F6D, #FFC371);
+    background-clip: text;
+}
+
+@media (max-width:660px) {
+    .desol-services-second h4 {
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+    
+    .desol-services-second h5 {
+        padding: 0 10px;
+        padding-bottom: 25px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .desol-contact-us-form {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .desol-contact-us-form .desol-contact-form-control {
+        width: 100%;
+        height: 60px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .desol-contact-us-form-section {
+        background-image: none;
+    }
+    .desol-call-to-action {
+        padding: 35px 15px;
+        border-radius: 25px;
+    }
+    .desol-call-to-action h4 {
+        margin-bottom: 1.5rem !important;
+        font-size: 22px;
+    }
+    .desol-call-to-action a {
+        font-size: 15px;
+    }
+    .desol-work-study-section {
+        display: none;
+    }
+    .desol-contact-us-lists {
+        margin-right: none;
+        margin-bottom: 30px !important;
+    }
+    .desol-why-choose .desol-why-choose-us {
+        flex: none;
+    }
+    .desol-footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desol-footer-socials {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    .desol-footer-copyrights {
+        margin-left: 0 !important;
+    }
+    .hero-setion {
+        padding: 50px 0;
+    }
+    .desol-hero-section h1 {
+        font-size: 55px;
+        line-height: 70px;
+        margin-left: 5px;
+    }
+    .desol-hero-big-section .carousel-control-prev {
+        left: 5%;
+    }
+    .desol-hero-big-section .carousel-control-next {
+        right: 5%;
+    }
+    .desol-hero-section {
+        margin-bottom: 35px;
+    }
+    iframe {
+        width: 100%;
+    }
+    .desol-about-country-two .desol-country-flex-two-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .desol-country-flex-two-section .desol-country-flex-content .accordion {
+        width: 100%;
+    }
+    .desol-country-flex-two-section .desol-country-flex-content .accordion-body {
+        height: 300px;
+        overflow: auto;
+    }
+
+    .desol-country-job-specification {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .desol-breadcrumb-section {
+        min-height: 250px;
+    }
+    .desol-breadcrumb-section h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .desol-section {
+        padding: 40px 0;
+    }
+    .desol-contact-us-text {
+        font-size: 15px;
+    }
+}
