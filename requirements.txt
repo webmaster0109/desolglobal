@@ -5,3 +5,5 @@ django-hitcount
 django-import-export
 django-unfold
 gunicorn
+whitenoise
+django-simple-history
