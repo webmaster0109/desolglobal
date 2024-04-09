@@ -7,3 +7,4 @@ django-unfold
 gunicorn
 whitenoise
 django-simple-history
+django-admin-sortable2
