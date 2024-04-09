@@ -1206,6 +1206,10 @@ h4.desol-services {
     text-align: justify;
 }
 
+.desol-career-destination-content img {
+    display: none;
+}
+
 .desol-career-destination-container .desol-career-destination-content .desol-career-destination-button {
     text-decoration: none;
     padding: 10px 20px;
@@ -1807,6 +1811,30 @@ h4.desol-services {
     }
 
     .desol-destination-description .desol-destination-subtitle {
+        text-align: center;
+    }
+
+    .desol-career-destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .desol-career-destination-content img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        margin: 15px 0;
+    }
+
+    .desol-career-destination-container .desol-career-destination-image img {
+        display: none;
+    }
+
+    .desol-career-destination-container .desol-career-destination-content h2 {
+        font-size: 32px;
         text-align: center;
     }
 }
