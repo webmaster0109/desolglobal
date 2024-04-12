@@ -1174,9 +1174,8 @@ h4.desol-services {
 .desol-career-destination-country .desol-country-card .desol-country-image img {
     width: 100px;
     border-radius: 12px;
-    padding: 1px;
+    padding: 0;
     height: 63px;
-    background: linear-gradient(135deg, #FF0769 0%, rgba(136, 93, 241, 0.56) 47.92%, #FFB14D 70.06%, #FCD04E 100%);
 }
 
 .desol-career-destination-container {
