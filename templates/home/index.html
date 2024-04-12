@@ -91,7 +91,7 @@
                             Study Work <br>Live <br><b style="color: #9FCFBB;">In Europe</b>
                         </h1>
                         <h2>Ready to Study, Work, and Live Your European Dream? Desol Global Empowers Your Journey Every Step of the Way. Start Your Journey Today!</h2>
-                            <a href="#" class="desol-hero-btn">
+                            <a href="{% url 'contact_us' %}" class="desol-hero-btn">
                                 <span class="desol-hero-btn-text">apply now</span>
                                 <span class="material-symbols-outlined">expand_circle_right</span>
                             </a>
@@ -295,40 +295,46 @@
             <div class="col-md-5 col-12">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-12 desol-destination-description mb-3">
-                        <div class="desol-destination-icon">
-                            <img src="/media/home/images/country/poland.webp" alt="" srcset="">
-                        </div>
-                        <div class="desol-destination-title me-3">
-                            Poland
-                        </div>
-                        <div class="desol-destination-subtitle">
-                            Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 6,129</b> <br>
-                            Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 8,599</b>
-                        </div>
+                        <a href="{% url 'about_poland' %}">
+                            <div class="desol-destination-icon">
+                                <img src="/media/home/images/country/poland.webp" alt="" srcset="">
+                            </div>
+                            <div class="desol-destination-title me-3">
+                                Poland
+                            </div>
+                            <div class="desol-destination-subtitle">
+                                Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 6,129</b> <br>
+                                Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 8,599</b>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-12 col-lg-12 col-12 desol-destination-description mb-3">
-                        <div class="desol-destination-icon">
-                            <img src="/media/home/images/country/Lithuania.png" alt="" srcset="">
-                        </div>
-                        <div class="desol-destination-title me-2">
-                            Lithuania
-                        </div>
-                        <div class="desol-destination-subtitle">
-                            Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 7,239</b> <br>
-                            Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 9,889</b>
-                        </div>
+                        <a href="{% url 'about_lithuania' %}">
+                            <div class="desol-destination-icon">
+                                <img src="/media/home/images/country/Lithuania.png" alt="" srcset="">
+                            </div>
+                            <div class="desol-destination-title me-2">
+                                Lithuania
+                            </div>
+                            <div class="desol-destination-subtitle">
+                                Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 7,239</b> <br>
+                                Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 9,889</b>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-12 col-lg-12 col-12 desol-destination-description">
-                        <div class="desol-destination-icon">
-                            <img src="/media/home/images/country/Latvia.jpg" alt="" srcset="">
-                        </div>
-                        <div class="desol-destination-title me-3">
-                            Latvia
-                        </div>
-                        <div class="desol-destination-subtitle">
-                            Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 6,790</b> <br>
-                            Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 8,399</b>
-                        </div>
+                        <a href="{% url 'about_latvia' %}">
+                            <div class="desol-destination-icon">
+                                <img src="/media/home/images/country/Latvia.jpg" alt="" srcset="">
+                            </div>
+                            <div class="desol-destination-title me-3">
+                                Latvia
+                            </div>
+                            <div class="desol-destination-subtitle">
+                                Special Value Price: <b style="font-family: 'Poppins', sans-serif;">AED 6,790</b> <br>
+                                Regular Price: <b style="font-family: 'Poppins', sans-serif;">AED 8,399</b>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -344,7 +350,7 @@
                     <div class="desol-why-choose-us-icon">
                         <img src="/media/home/images/extras/Girl-and-world.jpg" alt="">
                         <div class="desol-why-choose-us-button">
-                            <a href="#">Apply Now</a>
+                            <a href="{% url 'contact_us' %}">Apply Now</a>
                         </div>
                     </div>
                 </div>
