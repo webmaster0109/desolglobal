@@ -20,8 +20,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://www.desolglobal.ae']
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +43,10 @@ INSTALLED_APPS = [
     'adminsortable2',
     'import_export'
 ]
+
+CSRF_TRUSTED_ORIGINS = ['www.desolglobal.ae']
+
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
